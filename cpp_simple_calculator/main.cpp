@@ -1,4 +1,5 @@
 #include  <iostream>
+#include <locale.h>
 #include <string>
 
 using namespace std;
@@ -36,6 +37,8 @@ template <typename T> T Calculate(T num1, T num2)
 
 int main()
 {
+	setlocale(LC_ALL, "Turkish");
+
 	start();
 	double num2 = 0, num1 = 0;
 
