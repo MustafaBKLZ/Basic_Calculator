@@ -1,11 +1,7 @@
-#include  <iostream>
+#include <iostream>
 #include <locale.h>
 #include <string>
-
-
 using namespace std;
-
-
 void start()
 {
 	cout << "Welcome to Calculator v1..." << endl;
@@ -13,12 +9,8 @@ void start()
 	cout << "--------- Use -!- while operator input for Exit  -------" << endl;
 	cout << "--------------------------------------" << endl;
 }
-
-
 double final = 0;
 char op;
-
-
 template <typename T> T Calculate(T num1, T num2)
 {
 	switch (op)
@@ -34,12 +26,9 @@ template <typename T> T Calculate(T num1, T num2)
 	cout << "--------------------" << endl;
 	return final;
 }
-
-
-int main1()
+int main()
 {
 	setlocale(LC_ALL, "Turkish");
-
 	start();
 	double num2 = 0, num1 = 0;
 
@@ -51,14 +40,10 @@ Next:
 	cin >> op;
 	if (op == '!')exit(0);
 
-
 	cout << "input a number" << endl;
 	cin >> num2;
 
 	num1 = Calculate(num1, num2);
 
 	goto Next;
-
-
 }
-
